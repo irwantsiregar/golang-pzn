@@ -13,11 +13,13 @@ func registerUser(name string, blacklist Blacklist) {
 }
 
 func main() {
+	// Anonymous Function save to variable
 	blacklist := func(name string) bool {
 		return name == "anjing"
 	}
 	registerUser("eko", blacklist)
 
+	// Anonymous Function
 	registerUser("anjing", func(name string) bool {
 		return name == "anjing"
 	})

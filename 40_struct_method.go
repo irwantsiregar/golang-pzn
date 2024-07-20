@@ -7,6 +7,7 @@ type Customer struct {
 	Age           int
 }
 
+// A function assigned to in Struct.
 func (customer Customer) sayHello(name string) {
 	fmt.Println("Hello", name, "my name is", customer.Name)
 }
@@ -15,7 +16,7 @@ func main() {
 	var eko Customer
 	fmt.Println(eko)
 
-	eko.Name = "Eko Kurniawan"
+	eko.Name = "Eko_Kurniawan"
 	eko.Address = "Indonesia"
 	eko.Age = 30
 	fmt.Println(eko)
@@ -37,3 +38,22 @@ func main() {
 	eko.sayHello("Agus")
 	joko.sayHello("Agus")
 }
+
+/*
+=> Result from Struct when running the background:
+	budi: {
+		Name:    "Eko",
+		Address: "Indonesia",
+		Age:     30,
+		sayHello: ("Agus") => {
+			fmt.Println("Hello", <"Agus">, "my name is", <"Ekoo">)
+		}
+	}
+*/
+
+/*
+# [ Struct Method ]
+- Struct adalah tipe data seperti tipe data lainnya, dia bisa digunakan sebagai parameter untuk function
+- Namun jika kita ingin menambahkan method ke dalam structs, sehingga seakan-akan sebuah struct memiliki function
+- Method adalah function
+*/

@@ -18,3 +18,12 @@ func main() {
 	fmt.Println(address1)
 	fmt.Println(address2)
 }
+
+/*
+# [ Asterisk Operator ]
+
+# Operator *
+- Saat kita mengubah variable pointer, maka yang berubah hanya variable tersebut.
+- Semua variable yang mengacu ke data yang sama tidak akan berubah
+- Jika kita ingin mengubah seluruh variable yang mengacu ke data tersebut, kita bisa menggunakan operator *.
+*/

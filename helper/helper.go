@@ -2,6 +2,7 @@ package helper
 
 import "fmt"
 
+// Vid: 51_access_modifier
 var version = "1.0.0"
 var Application = "golang"
 
