@@ -1,3 +1,3 @@
-module belajar-golang-dasar
+module belajar-golang-standard-library
 
 go 1.21.3
