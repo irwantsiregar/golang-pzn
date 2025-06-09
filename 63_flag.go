@@ -18,3 +18,9 @@ func main() {
 	fmt.Println("Host", *host)
 	fmt.Println("Port", *port)
 }
+
+/*
+$ go run 63_flag.go -username=irwan -password="rahasia banget" -host=123.231.23.1 -port=5505
+
+
+*/
