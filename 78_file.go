@@ -53,3 +53,13 @@ func main() {
 
 	addToFile("sample.log", "\nthis is add message")
 }
+
+
+/*
+[ File Management ]
+ 
+- Di package os, terdapat File Management, namun sengaja ditunda pembahasannya, karena kita harus tahu dulu tentang IO
+- Saat kita membuat atau membaca file menggunakan Package os, struct File merupakan implementasi dari io.Reader dan io.Writer
+- Oleh karena itu, kita bisa melakukan baca dan tulis terhadap File tersebut menggunakan Package io / bufio
+
+*/

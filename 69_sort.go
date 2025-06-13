@@ -36,3 +36,13 @@ func main() {
 
 	fmt.Println(users)
 }
+
+
+/*
+[ Package sort ]
+
+- Package sort adalah package yang berisikan utilitas untuk proses pengurutan
+- Agar data kita bisa diurutkan, kita harus mengimplementasikan kontrak di interface sort.Interface
+- https://golang.org/pkg/sort/
+
+*/

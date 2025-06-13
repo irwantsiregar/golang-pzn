@@ -25,3 +25,11 @@ func main() {
 		fmt.Println(e.Value)
 	}
 }
+
+/*
+[ Package container/list ]
+
+- Package container/list adalah implementasi struktur data double linked list di Go-Lang
+- https://golang.org/pkg/container/list/
+
+*/

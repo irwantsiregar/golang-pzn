@@ -26,3 +26,14 @@ func main() {
 	var stringInt string = strconv.Itoa(999)
 	fmt.Println(stringInt)
 }
+
+
+/*
+[ Package strconv ]
+
+- Sebelumnya kita sudah belajar cara konversi tipe data, misal dari int32 ke int34
+- Bagaimana jika kita butuh melakukan konversi yang tipe datanya berbeda? Misal dari int ke string, atau sebaliknya
+- Hal tersebut bisa kita lakukan dengan bantuan package strconv (string conversion)
+- https://golang.org/pkg/strconv/
+
+*/

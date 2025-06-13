@@ -20,12 +20,12 @@ func GetById(id string) error {
 	}
 
 	// sukses
-
 	return nil
 }
 
 func main() {
 	err := GetById("eko")
+
 	if err != nil {
 		if errors.Is(err, ValidationError) {
 			fmt.Println("validation error")
@@ -36,3 +36,15 @@ func main() {
 		}
 	}
 }
+
+
+/*
+[Package Errors]
+- Sebelumnya kita sudah membahas tentang interface error yang merupakan representasi dari error di Go-Lang, dan membuat error menggunakan function errors.New()
+- Sebenarnya masih banyak yang bisa kita lakukan menggunakan package errors, contohnya ketika kita ingin membuat beberapa value error yang berbeda
+- https://pkg.go.dev/errors 
+
+# Mengecek Jenis Error
+- Misal kita membuat jenis error sendiri, lalu kita ingin mengecek jenis errornya
+- Kita bisa menggunakan errors.Is() untuk mengecek jenis type error nya
+*/

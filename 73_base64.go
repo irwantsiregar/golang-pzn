@@ -18,3 +18,11 @@ func main() {
 		fmt.Println(string(decoded))
 	}
 }
+
+/*
+[ Package encoding ]
+- Golang menyediakan package encoding untuk melakukan encode dan decode
+- https://pkg.go.dev/encoding
+- Golang menyediakan berbagai macam algoritma untuk encoding, contoh yang populer adalah base64, csv dan json
+
+*/
