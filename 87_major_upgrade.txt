@@ -1,0 +1,39 @@
+[ Major Upgrade ]
+
+- Major upgrade biasanya terjadi dikarenakan ada perubahan pada isi kode program kita, sehingga membuatnya tidak backward compatible
+- Sebaiknya hal ini sebisa mungkin dihindari
+- Namun jika tidak bisa dihindari, strategy terbaik adalah merubah nama module
+
+
+# Cara Major Changes (Module)
+1. Lakukan perubahan major version menjadi terbaru (v2) dari module yang terdapat pada file go.mod didalam project 'go-say-hello'
+    Seperti berikut:
+        /*
+            module github.com/ProgrammerZamanNow/go-say-hello/v2
+            go 1.15
+        */
+    Dengan perubahan kode seperti berikut:
+        /*
+            func SayHello(name string) string {
+            return "Hello" + name
+            }
+        */
+2. Lakukan komit dan push perubahan ke repository github
+	- git add . && git commit -m "update say hello with parameter name" 
+	- git push origin master
+3. Lakukan update tag version dan push ke origin repository
+	- git tag v2.0.0
+	- git push origin v2.0.0
+4. Pada branch project di repository sudah terdapat major changes new dengan tag pada section 'Releases'
+
+
+# Cara Major Upgrade
+5. Hapus module dengan versi lama sebelumnya pada module 'app-say-hello'
+6. Download kembali module 'go-say-hello' versi terbaru dengan major changes tersebut.
+    $ go get github.com/ProgrammerZamanNow/go-say-hello/v2
+7. Pada project 'app-say-hello' yang mengggunakan module 'go-say-hello' maka dapat menyesuaikan kembali terhadap cara pemanggilan kode/ penggunaan function.
+
+
+Good Know:
+ - Jika tidak menambahkan major changes atau tanpa path '/v2', maka akan melakukan download module yg lama sebelumnya.
+ - Jika mencoba melakukan download module yang tidak terdapat versi tersebut, maka tidak akan terjadi proses download apapun.

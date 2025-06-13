@@ -1,0 +1,24 @@
+
+[ Membuat Module ]
+
+Untuk membuat module baru, kita bisa menggunakan perintah : go mod init nama-module
+Go-Lang akan secara otomatis membuat file go.mod yang berisikan informasi nama module dan juga versi Go-Lang yang kita gunakan
+
+
+# Cara Membuat Module:
+1. Buat project baru pada repository github dengan nama 'go-say-hello'
+2. Pada komputer lokal ketika ingin inisialisasi project baru, jalankan command berikut:
+	$ go mod init <nama module (repository_project)>
+		OR
+	$ go mod init github.com/ProgrammerZamanNow/go-say-hello
+3. Lakukan init project: git init
+4. Tuliskan code function pada project berikut yang akan menjadi module
+5. Lakukan komit dan push perubahan ke repository github
+	- git add . && git commit -m "feat: say hello" 
+	- git push origin master
+
+# Cara Releases Module 'go-say-hello':
+6. Lakukan init tag version dan push ke origin repository
+	- git tag v1.0.0
+	- git push origin v1.0.0
+7. Pada branch project di repository sudah terdapat rilis tag terbaru pada section 'Releases'

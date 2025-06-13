@@ -1,0 +1,16 @@
+
+[ Update Module ]
+
+Untuk melakukan upgrade module, kita hanya cukup membuat tag baru di Git
+
+# Cara Update Module:
+1. Tuliskan perubahan kode pada project 'go-say-hello'
+2. Lakukan komit dan push perubahan ke repository github
+	- git add . && git commit -m "feat: update say hello" 
+	- git push origin master
+
+# Cara Update Releases Module 'go-say-hello':
+3. Lakukan update tag version dan push ke origin repository
+	- git tag v1.3.0
+	- git push origin v1.3.0
+4. Pada branch project di repository sudah terdapat perubahan rilis tag pada section 'Releases'

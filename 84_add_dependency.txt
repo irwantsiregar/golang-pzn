@@ -1,0 +1,30 @@
+
+[ Menambah Dependency ]
+
+Menggunakan command git: 
+$ go get <nama-module>
+
+# Cara Membuat Module:
+1. Buat project baru pada repository github dengan nama 'app-say-hello'
+2. Pada komputer lokal ketika ingin inisialisasi project baru, jalankan command berikut:
+	$ go mod init <repository_address_project>
+			OR
+	$ go mod init github.com/ProgrammerZamanNow/app-say-hello
+3. Lakukan init project: git init
+
+# Cara Menambahkan Dependency (Use module 'go-say-hello'):
+4. Download module 'go-say-hello' sebagai dependency pada project 'app-say-hello'
+	/*
+		$ go get github.com/ProgrammerZamanNow/go-say-hello
+	*/
+   Secara otomatis akan melakukan Download versi terbaru.
+5. Untuk memastikan dependency sudah berhasil di Download , maka bisa di cek pada file 'go.mod'
+	/*
+		module github.com/ProgrammerZamanNow/app-say-hello
+		go 1.15
+		require github.com/ProgrammerZamanNow/go-say-hello/v2 v2.0.0
+	*/
+6. Tuliskan code function pada project dan gunakan dependency 'go-say-hello' tersebut 
+7. Lakukan komit dan push perubahan ke repository github
+	- git add . && git commit -m "feat: app-say-hello" 
+	- git push origin master

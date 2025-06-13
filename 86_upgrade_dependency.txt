@@ -1,0 +1,17 @@
+
+[ Upgrade Dependency ]
+
+Untuk upgrade dependency ke versi terbaru, kita bisa mengubah isi go.mod, lalu mengubah tag nya menjadi tag terbaru
+Untuk mendownload versi terbaru, gunakan perintah : go get
+
+
+# Cara Upgrade Dependency
+1. Lalukan perubahan version terbaru dari module yang terdapat pada file go.mod didalam project 'app-say-hello'
+    Seperti berikut:
+    /*
+        module github.com/ProgrammerZamanNow/app-say-hello
+        go 1.15
+        require github.com/ProgrammerZamanNow/go-say-hello v1.3.0
+    */
+2. Jalankan command berikut: $ go get
+3. Versi terbaru dari module berhasil didownload
