@@ -1,3 +1,3 @@
-module belajar-golang-dasar
+module learn-golang-goroutine
 
-go 1.21.3
+go 1.24.4
