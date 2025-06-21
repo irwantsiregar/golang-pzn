@@ -13,7 +13,7 @@ func TestSyncMutex(t *testing.T) {
 	// For lock & unlock goroutine process
 	var mutex sync.Mutex
 
-	// GoRoutine with race condition
+	// GoRoutine with handling race condition
 	for i := 1; i <= 1000; i++ {
 		go func ()  {
 			for j := 1; j <= 100; j++ {
