@@ -9,13 +9,13 @@ import (
 // Func with channel parameter
 func GiveMeResponse(channel chan string) {
 	time.Sleep(2 * time.Second)
-		
+
 	channel <- "Irwanto"
 }
 
 func TestChannelAsParameter(t *testing.T) {
 	channel := make(chan string)
-
+	
 	defer close(channel)
 
 	// This func waiting data from channel
