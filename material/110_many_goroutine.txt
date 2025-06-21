@@ -1,0 +1,6 @@
+[ Goroutine Sangat Ringan ]
+
+- Seperti yang sebelumnya dijelaskan, bahwa goroutine itu sangat ringan
+- Kita bisa membuat ribuan, bahkan sampai jutaan goroutine tanpa takut boros memory
+- Tidak seperti thread yang ukurannya berat, goroutine sangatlah ringan
+
