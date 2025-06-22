@@ -1,6 +1,6 @@
 [ Map ]
 
-- Go-Lang memiliki sebuah struct beranama sync.Map
+- Go-Lang memiliki sebuah struct bernama sync.Map
 - Map ini mirip Go-Lang map, namun yang membedakan, Map ini aman untuk menggunaan concurrent menggunakan goroutine
 - Ada beberapa function yang bisa kita gunakan di Map :
 - Store(key, value) untuk menyimpan data ke Map
