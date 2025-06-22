@@ -14,7 +14,7 @@ func TestAtomic(t *testing.T) {
 	// Handle race condition with Atomic. Ex: for data type primitif
 	for i := 1; i <= 1000; i++ {
 		go func ()  {
-			// group.Add(1)
+			group.Add(1)
 			for j := 1; j <= 100; j++ {
 				atomic.AddInt64(&x, 1)
 			}
