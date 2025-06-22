@@ -7,8 +7,8 @@ import (
 	"time"
 )
 
-// TIMER: FOR LAY JOB
 // Timer is representation a event
+// TIMER: FOR DELAY JOB
 
 func TestTimer(t *testing.T) {
 	timer := time.NewTimer(5 * time.Second)
