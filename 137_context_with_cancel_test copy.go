@@ -56,7 +56,7 @@ func CreateCounter(ctx context.Context) chan int {
 
 		for {
 			select {
-			case <- ctx.Done():
+				case <- ctx.Done():
 					return
 				default:
 					destination <- counter
