@@ -27,7 +27,7 @@ func CreateCounterLeak() chan int {
 	return destination
 }
 
-func TestContextWithCancelLeak(t *testing.T) {
+func TestGourotinesWithLeak(t *testing.T) {
 	fmt.Println("Total GoRoutine", runtime.NumGoroutine())
 
 	destination := CreateCounterLeak()
@@ -67,7 +67,8 @@ func CreateCounter(ctx context.Context) chan int {
 
 	return destination
 }
-func TestContextWithCancel(t *testing.T) {
+
+func TestContexDtWithCancel(t *testing.T) {
 	fmt.Println("Total GoRoutine", runtime.NumGoroutine())
 
 	// Init Context
