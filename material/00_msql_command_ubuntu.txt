@@ -1,0 +1,54 @@
+Perintah-Perintah Dasar MySQL
+Untuk menggunakan dan mengelola service MySQL yang sudah berhasil terinstal di server Ubuntu, Anda bisa menggunakan perintah teks (command line). Berikut daftar perintah-perintah dasar cara menggunakan MySQL di Ubuntu.
+
+1. Login ke MySQL
+Untuk login ke service MySQL, jalankan perintah sebagai berikut:
+
+    $ mysql -u root -p
+    
+    Masukkan password root MySQL yang sudah Anda atur di langkah sebelumnya. Ketika sudah masuk ke service MySQL, shell akan menampilkan MariaDB [(none)]>
+
+2. Membuat Database
+Untuk membuat database, jalankan perintah berikut:
+    $ CREATE DATABASE namadatabase DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci;
+
+3. Membuat User Database
+Untuk membuat user database, jalankan perintah berikut:
+    $ CREATE USER 'userdatabase'@'localhost' IDENTIFIED BY 'password';
+
+4. Menambahkan PRIVILAGES
+Supaya user database yang dibuat memiliki hak akses all privilages terhadap database yang sudah dibuat, jalankan perintah berikut:
+
+    $ GRANT ALL ON namadatabase.* TO 'userdatabase'@'localhost'; 
+    $ FLUSH PRIVILEGES;
+
+5. Melihat Daftar Database
+Untuk melihat daftar database yang ada di server, jalankan perintah berikut:
+    $ SHOW DATABASES;
+
+6. Melihat Isi Database
+Untuk melihat daftar table (isi) dari database, jalankan perintah berikut:
+    $ use namadatabase
+    $ SHOW TABLES;
+
+7. Keluar Dari MySQL
+Untuk keluar dari service mysql, jalankan perintah berikut:
+    $exit
+
+8. Export Database
+Untuk mengexport database, jalankan perintah berikut:
+    $ mysqldump -u root -p  namadatabase > database.sql
+
+9. Mengimport Database
+Untuk mengimport database, jalankan perintah berikut:
+    $ mysql -u root -p namadatabase < database.sql
+
+10. Menghentikan, Menjalankan dan Restart Service MySQL
+Untuk menghentikan service MySQL, jalankan perintah berikut:
+    $systemctl stop mysql
+
+Untuk menjalankan service MySQL, jalankan perintah berikut:
+    $ systemctl start mysql
+
+Untuk merestart service MySQL, jalankan perintah berikut:
+    $ systemctl restart mysql
