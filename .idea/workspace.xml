@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c3a3dd24-df0d-43fe-a199-f6843aba9e4c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/bufio_read.go" beforeDir="false" afterPath="$PROJECT_DIR$/77_bufio_read.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bufio_write.go" beforeDir="false" afterPath="$PROJECT_DIR$/76_bufio_write.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/errors.go" beforeDir="false" afterPath="$PROJECT_DIR$/61_errors.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flag.go" beforeDir="false" afterPath="$PROJECT_DIR$/63_flag.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fmt.go" beforeDir="false" afterPath="$PROJECT_DIR$/60_fmt.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/list.go" beforeDir="false" afterPath="$PROJECT_DIR$/67_list.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/math.go" beforeDir="false" afterPath="$PROJECT_DIR$/66_math.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/os.go" beforeDir="false" afterPath="$PROJECT_DIR$/62_os.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/path.go" beforeDir="false" afterPath="$PROJECT_DIR$/75_path.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reflect.go" beforeDir="false" afterPath="$PROJECT_DIR$/71_reflect.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/regexp.go" beforeDir="false" afterPath="$PROJECT_DIR$/72_regexp.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ring.go" beforeDir="false" afterPath="$PROJECT_DIR$/68_ring.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/slices.go" beforeDir="false" afterPath="$PROJECT_DIR$/74_slices.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sort.go" beforeDir="false" afterPath="$PROJECT_DIR$/69_sort.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/strconv.go" beforeDir="false" afterPath="$PROJECT_DIR$/65_strconv.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/strings.go" beforeDir="false" afterPath="$PROJECT_DIR$/64_strings.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/time.go" beforeDir="false" afterPath="$PROJECT_DIR$/70_time.go" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 5
+}]]></component>
+  <component name="ProjectId" id="2jXqyF5ofsReu1os8V1t7NwZQoH" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
+    "go.import.settings.migrated": "true",
+    "last_opened_file_path": "/home/irwan",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-gosdk-33c477a475b1-e0158606a674-org.jetbrains.plugins.go.sharedIndexes.bundled-GO-241.18034.61" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-GO-241.18034.61" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VgoProject">
+    <settings-migrated>true</settings-migrated>
+  </component>
+</project>
