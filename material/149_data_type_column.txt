@@ -1,0 +1,17 @@
+[ Tipe Data Column ]
+
+- Sebelumnya kita hanya membuat table dengan tipe data di kolom nya berupa VARCHAR
+- Untuk VARCHAR di database, biasanya kita gunakan String di Golang
+- Bagaimana dengan tipe data yang lain?
+- Apa representasinya di Golang, misal tipe data timestamp, date dan lain-lain
+
+
+# Mapping Tipe Data
+
+Tipe Data Database               |  Tipe Data Golang
+---------------------------------------------------------
+ VARCHAR, CHAR                   |  string
+ INT, BIGINT                     |  int32, int64
+ FLOAT, DOUBLE                   |  float32, float64
+ BOOLEAN                         |  bool
+ DATE, DATETIME, TIME, TIMESTAMP |  time.Time

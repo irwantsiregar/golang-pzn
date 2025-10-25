@@ -5,7 +5,9 @@ Untuk menggunakan dan mengelola service MySQL yang sudah berhasil terinstal di s
 Untuk login ke service MySQL, jalankan perintah sebagai berikut:
 
     $ mysql -u root -p
-    
+      
+      (on ubuntu: sudo mysql -u root -p)
+      
     Masukkan password root MySQL yang sudah Anda atur di langkah sebelumnya. Ketika sudah masuk ke service MySQL, shell akan menampilkan MariaDB [(none)]>
 
 2. Membuat Database
