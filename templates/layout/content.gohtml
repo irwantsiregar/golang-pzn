@@ -1,0 +1,23 @@
+{{define "layout"}}
+
+{{ template "header" . }}
+    <h1>Hello, {{ .Name }}</h1>
+{{ template "footer" }}
+
+{{end}}
+
+
+
+{{/* 
+Disini dapat juga digunakan untuk 'Multiple Layout', 
+Contoh seperti Berikut: */}}
+{{/* 
+    {{define "layout"}}
+    {{ template "header" . }}
+        <h1>Hello, {{ .Name }}</h1>
+    {{ template "footer" }}
+
+    {{define "test"}}
+        <h1>Test with Multiple Layout</h1>
+    {{end}}
+*/}}
