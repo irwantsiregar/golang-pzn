@@ -1,0 +1,5 @@
+[ Middleware ]
+
+# Middleware
+- HttpRouter hanyalah library untuk http router saja, tidak ada fitur lain selain router
+- Dan karena Router merupakan implementasi dari http.Handler, jadi untuk middleware, kita bisa membuat sendiri, seperti yang sudah kita bahas pada course Go-Lang Web

@@ -1,0 +1,7 @@
+[ Not Found Handler ]
+
+# Not Found Handler
+- Selain panic handler, Router juga memiliki not found handler
+- Not found handler adalah handler yang dieksekusi ketika client mencoba melakukan request URL yang memang tidak terdapat di Router
+- Secara default, jika tidak ada route tidak ditemukan, Router akan melanjutkan request ke http.NotFound, namun kita bisa mengubah nya
+- Caranya dengan mengubah router.NotFound = http.Handler
