@@ -1,0 +1,4 @@
+[ Membuat Project ]
+
+- go mod init ProgrammerZamanNow/belajar-golang-generics
+- go get github.com/stretchr/testify
