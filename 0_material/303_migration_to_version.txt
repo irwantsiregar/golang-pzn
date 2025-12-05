@@ -1,0 +1,24 @@
+[ Migrasi ke Versi Tertentu ]
+
+# Migrasi ke Versi Tertentu
+- Saat menggunakan mode up atau down, secara otomatis akan melakukan migrasi seluruh file
+- Kadang pada kenyataanya, kita mungkin hanya ingin melakukan up atau down ke versi tertentu saja
+- Misal jika ingin melakukan rollback, mungkin kita hanya ingin rollback satu versi saja, tidak mau melakukan rollback semua versi
+- Untuk kasus ini, setelah perintah up atau down, kita bisa memasukkan angka, yaitu jumlah migration yang ingin kita eksekusi
+
+
+# Tugas
+Buatlah 3 migration file baru
+
+$ migrate create -ext sql -dir db/migrations create_table_first
+
+$ migrate create -ext sql -dir db/migrations create_table_second
+
+$ migrate create -ext sql -dir db/migrations create_table_third
+
+
+#Tugas
+- Lakukan up 
+- Lakukan down
+- Lakukan up beberapa versi
+- Lakukan down beberapa versi

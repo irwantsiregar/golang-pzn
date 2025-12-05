@@ -1,0 +1,11 @@
+[ Menjalankan Migration ]
+
+# Menjalankan Migration
+
+- Selanjutnya, setelah selesai, kita bisa menjalan database migration menggunakan perintah :
+    $ migrate -database "koneksidatabase" -path folder up
+- -database harus berisikan koneksi database, misal untuk mysql, 
+    bisa menggunakan : mysql://user:password@tcp(host:port)/nama_database
+- Untuk database lainnya, bisa lihat di halaman dokumentasinya : https://github.com/golang-migrate/migrate#databases 
+- -path adalah lokasi folder file database migration
+- up adalah perintah untuk menjalankan database migration dengan mode up

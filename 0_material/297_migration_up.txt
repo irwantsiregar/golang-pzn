@@ -1,0 +1,15 @@
+[ Migration Up ]
+
+# Migration Up
+- Saat kita membuat file database migration, file dengan akhiran up adalah file yang harus kita isi dengan perubahan yang ingin kita tambahkan
+- Misal, sekarang kita akan tambahkan table category, sesuai dengan aplikasi RESTful API yang sudah kita buat
+
+# Kode Migration Down
+
+$
+    CREATE TABLE category
+    (
+        id   INT          NOT NULL AUTO_INCREMENT,
+        name VARCHAR(255) NOT NULL,
+        PRIMARY KEY (id)
+    ) ENGINE = InnoDB;

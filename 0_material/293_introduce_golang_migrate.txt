@@ -1,0 +1,6 @@
+# Pengenalan Golang Migrate
+
+- Golang Migrate adalah salah satu tool untuk Database Migration yang populer digunakan oleh programmer Golang
+- Golang Migrate bisa diintegrasikan dengan aplikasi, atau dijalankan sebagai aplikasi standalone
+- Golang Migrate mendukung banyak sekali database, seperti MySQL, PostgreSQL, Sqlite, MongoDB, Cassandra, dan lain-lain
+- https://github.com/golang-migrate/migrate 

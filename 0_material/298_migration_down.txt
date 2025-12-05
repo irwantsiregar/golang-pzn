@@ -1,0 +1,11 @@
+[ Migration Down ]
+
+# Migration Down
+- Setiap file migration, selain file up, terdapat juga file down
+- File down ini adalah file yang berisikan kode untuk mengembalikan perubahan yang kita lakukan di file up
+- Kenapa ini diperlukan? Karena misal terjadi masalah di aplikasi, namun database migration terlanjur dijalankan, kita bisa melakukan rollback dengan cara menjalankan file down, karena berisikan kode untuk mengembalikan perubahan di file up
+- Pada kasus ini, misal kita akan menghapus lagi table category
+
+
+# Kode Migration Down
+$    DROP TABLE IF EXISTS category;

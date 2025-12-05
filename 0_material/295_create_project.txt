@@ -1,0 +1,6 @@
+[ Membuat Project ]
+
+# Membuat Project
+
+- Sebagai contoh, kita akan menggunakan project Golang RESTful API yang pernah kita buat, lalu kita akan tambahkan Database Migration ke project tersebut
+- https://github.com/ProgrammerZamanNow/belajar-golang-restful-api 

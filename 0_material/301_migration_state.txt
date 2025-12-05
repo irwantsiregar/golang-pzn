@@ -1,0 +1,19 @@
+[ Migration State ]
+
+# Migration State
+
+- Saat kita sudah melakukan migration, lalu kita menambah file migration baru, apa yang terjadi jika kita menjalankan migration lagi?
+- Golang Migrate akan menyimpan state terakhir kita menjalankan database migration, artinya tidak akan dijalankan dari awal lagi, melainkan dari file terakhir yang sukses di migrasi
+- Jadi kita tidak perlu takut file akan dijalankan lagi, jadi tidak perlu dihapus file migration lama-nya
+- Semua informasi state tersebut disimpan dalam table schema_migrations
+
+
+# Kode : Schema Migrations
+
+mysql> show tables;
+
+mysql> select * from schema_migrations
+--------------------------
+version        | dirty   -
+20220921111125 |     0   -
+--------------------------

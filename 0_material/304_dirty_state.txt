@@ -1,0 +1,62 @@
+[ Dirty State ]
+
+# Dirty State
+- Saat kita membuat database migration, kadang kesalahan sering terjadi
+- Misal saja, kita melakukan typo sehingga membuat perintah SQL nya salah
+- Jika kita terlanjur menjalankan database migration, maka state akan berubah menjadi Dirty State
+- State gimana kita tidak bisa melakukan up atau down lagi
+- Pada kasus ini, kita harus perbaiki manual, kenapa harus manual? Karena tidak ada cara otomatis memperbaikinya
+
+# Kode : Migration Error
+
+CREATE TABLE correct
+(
+    id   INT          NOT NULL AUTO_INCREMENT,
+    name VARCHAR(255) NOT NULL,
+    PRIMARY KEY (id)
+) ENGINE = InnoDB;
+
+CREATE TABLE wrong
+(
+    id   INT          NOT NULL AUTO_INCREMENT,
+    name VARCHAR(255) NOT NULL,
+    PRIMARY KEY (id)
+) ENGINE = InnoDB;
+
+
+# Kode : Menjalankan Migration
+$ migrate -database "mysql://root@tcp(localhost:2206)/belajar_golang_database_migration" -path db/migrations up
+    result: -> error: migration failed in line 0 : CREATE TABLE correct
+
+# Permasalahan
+- Permasalahan migration ini adalah, kita membuat dua table di file migration, pada pembuatan table pertama sukses, namun pada table kedua gagal
+- Artinya file migration tidak sempurna, dan kita juga tidak bisa melakukan rollback, karena table kedua belum sukses dibuat
+- Pada kondisi ini, terjadi yang namanya Dirty State, dimana kita tidak bisa melakukan up atau down, yang perlu kita lakukan adalah memperbaiki secara manual
+
+# Kode : Schema Migrations
+
+mysql> show tables;
+
+mysql> select * from schema_migrations
+
+--------------------------
+version        | dirty   -
+20220921111125 |     1   -
+--------------------------
+
+# Mengubah Versi
+- Setelah kita memperbaiki secara manual, selanjutnya kita perlu mengubah versi migration di table schema_migrations
+- Kita bisa lakukan manual, atau bisa otomatis menggunakan perintah :
+    $ migrate -database "koneksi_database" -path folder force versi
+- Dimana versi adalah versi dari file database migration
+- Pada kasus ini, kita akan gunakan satu versi sebelum migration yang gagal
+
+
+# Kode : Mengubah Versi Migration
+$ migrate -database "mysql://root@tcp(localhost:3306)/belajar_golang_database_migration" -path db/migrations force 20220921110755
+$ migrate -database "mysql://root@tcp(localhost:3306)/belajar_golang_database_migration" -path db/migrations version
+
+# Selanjutnya
+Selanjutnya kita bisa perbaiki file database migration nya
+Lalu ulangi jalankan file migration nya
+

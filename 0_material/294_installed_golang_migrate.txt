@@ -1,0 +1,25 @@
+[ Menginstall Golang Migrate ]
+
+# Install Golang Migrate
+
+- Untuk menginstall Golang Migrate, sangat mudah, kita bisa gunakan perintah berikut :
+    $ go install -tags ‘database1,database2’ github.com/golang-migrate/migrate/v4/cmd/migrate@latest
+- Sesuaikan dengan database yang ingin kita gunakan, bisa lebih dari satu dengan cara menambahkan koma
+
+# Kode : Menginstall Golang Migrate
+    Example: 
+        $ go install -tags 'postgres,mysql' github.com/golang-migrate/migrate/v4/cmd/migrate@latest
+
+
+# Aplikasi migrate
+- Saat menginstall Golang Migrate, secara otomatis terdapat executable file di folder $GOPATH/bin/ dengan nama migrate
+- File migrate tersebut adalah aplikasi Golang Migrate yang akan kita gunakan untuk membuat Database Migration
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,7 @@
+[ Membuat Database ]
+
+# Membuat Database
+
+- Sebelum menjalankan Database Migration, sekarang kita perlu membuat dulu database nya
+- Hal ini karena pembuatan database tidak dilakukan di database migration, biasanya dilakukan manual diawal
+- Pada kasus ini, kita menggunakan database mysql, dan kita perlu ubah juga kode koneksi database di aplikasi agar terhubung dengan database baru

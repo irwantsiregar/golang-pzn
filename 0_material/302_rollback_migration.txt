@@ -1,0 +1,6 @@
+[ Rollback Migration ]
+
+# Rollback Migration
+- Pada waktu misal terjadi masalah pada aplikasi, yang menyebabkan kita harus melakukan rollback perubahan, apa yang kita harus lakukan? 
+- Fitur itu sudah ada di Golang Migrate, jadi kita bisa menjalankan mode down untuk melakukan rollback dengan perintah :
+   $ migrate -database "koneksidatabase" -path folder down

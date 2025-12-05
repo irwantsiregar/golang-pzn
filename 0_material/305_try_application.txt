@@ -1,0 +1,5 @@
+[ Mencoba Aplikasi ]
+
+# Mencoba Aplikasi
+- Sekarang sebelum kita menjalankan aplikasi, selalu jalankan database migration terlebih dahulu
+- Dan selanjutnya kita bisa mencoba menjalankan aplikasinya
